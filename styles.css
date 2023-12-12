@@ -94,7 +94,9 @@ h2 {
 }
 
 .info-text {
-    margin-top: 5px;
+    margin-top: 3px;
+    color: #1D2C3C;
+    font-size: 14px;
 }
 
 form {
@@ -125,7 +127,7 @@ label {
 
 .cvc {
     position: absolute;
-    top: 60%;
+    top: 65%;
     right: 10px;
     transform: translateY(-50%);
     font-size: 12px;
@@ -208,10 +210,18 @@ h5.money {
     font-size: 40px;
     font-weight: normal;
     margin-top: 7px;
+    position: relative;
 }
 
 .money span {
-    font-size: 10px;
+    font-size: 12px;
+}
+
+.dollar {
+    position: absolute;
+    top: 10px;
+    left: -8px;
+    font-size: 12px;
 }
 
 .freelancer-heading p{
