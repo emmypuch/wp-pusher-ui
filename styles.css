@@ -12,7 +12,7 @@ header {
 }
 
 .border {
-    border-bottom: 1px solid #979797;
+    border-bottom: 1px solid #e5e2e2;
     margin-left: 2rem;
     margin-right: 2rem;
 }
@@ -61,24 +61,53 @@ header nav ul li a {
 
 .checkout {
     background: #fff;
-    padding: 30px;   
+    padding: 40px;  
+    /* padding-bottom: 5px; */
+    margin-bottom: 10px;
+    position: relative;
 }
 
 h2 {
     color: #1D2C3C;
-    font-size: 20px;
-    /* border-bottom: 1px solid #979797; */
+    font-size: 20px; 
 }
 
-/* .border1 {
-    border-bottom: 1px solid #979797;
+.credit-card {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.credit-card::before {
+    content: "";
+    display: block;
+    width: 110%;
+    height: 1px;
+    background-color: #faf6f6;
+    position: absolute;
+    bottom: 15px;
+    top: 60px;
+    right: 0;
+    margin-top: 50px;
+}
+
+.checkout::after {
+    content: "";
+    display: block;
     width: 100%;
-} */
+    height: 1px;
+    background-color: #faf6f6;
+    position: absolute;
+    bottom: 15px;
+    top: 60px;
+    right: 0;
+    margin-top: 30px;
+}
 
 .info {
     display: flex;
     gap: 5px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .number {
@@ -182,7 +211,121 @@ button {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    padding: 40px;
+}
+
+.freelancer-heading h2 {
+    font-size: 18px;
+    color: #fff;
+}
+
+h5.money {
+    color: #fff;
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 7px;
+}
+
+.money span {
+    font-size: 10px;
+}
+
+.freelancer-heading p{
+    font-size: 14px;
+    font-style: italic;
+    color: #fff;
+    margin-top: 7px;
+}
+
+.details {
+    margin-top: 30px;
+}
+
+.lists {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.lists img {
+    width: 15px;
+}
+
+.lists p {
+    font-size: 13px;
+    color: #fff;
+}
+
+.switch {
+    margin-top: 30px;
+}
+
+.switch p {
+    font-size: 15px;
+    color: #fff;
+}
+
+.switch span {
+    font-weight: 700;
+}
+
+.switch a {
+    font-style: italic;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.switch a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #8ac8f2;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+.line {
+    background-color: #8ac8f2;
+    margin-top: 30px;
+    width: 100%;
+    height: 2px;
+}
+
+.quote {
+    margin-top: 35px;
+}
+
+.quote p {
+    font-style: italic;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.quote span {
+    font-weight: 700;
+}
+
+.quote-flex {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.quote-flex img {
+    width: 30px;
+}
+
+.quote-flex p {
+    margin-top: 5px;
+    font-size: 14px;
 }
 
 /* Copyright */
