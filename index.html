@@ -61,8 +61,11 @@
                             </div>
                             <div class="credit-card">
                                 <label for="creditCard">Credit Card</label>
-                                <input type="text" id="creditCard" name="creditCard"
-                                    placeholder="Card Number  MM / YY  CVC" autocomplete="off" maxlength="23">
+                                <div class="input-container">
+                                    <input type="card" id="creditCard" name="creditCard" placeholder="Card Number"
+                                        autocomplete="off" maxlength="23">
+                                    <div class="cvc">MM / YY CVC</div>
+                                </div>
                             </div>
 
                             <div class="btn">
