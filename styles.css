@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* .container {
+    background-color: #F5F8FA;
+} */
+
 header {
     padding: 1.2rem;
 }
@@ -36,7 +40,7 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     color: #1D2C3C;
     margin: 15px;
 }
@@ -52,6 +56,7 @@ header nav ul li a {
 .wrapper {
     margin-top: 40px;
 }
+
 .card-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -63,9 +68,11 @@ header nav ul li a {
 
 .checkout {
     background: #fff;
-    padding: 20px;  
+    padding: 30px;  
     margin-bottom: 10px;
     position: relative;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 h2 {
@@ -99,15 +106,10 @@ h2 {
     font-size: 14px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
 .flex {
-    display: flex;
-    justify-content: space-between;
-    gap: 7px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
 }
 
 label {
@@ -132,6 +134,7 @@ label {
     transform: translateY(-50%);
     font-size: 12px;
     color: #818384;
+    font-weight: 100;
 }
 
 input {
@@ -139,10 +142,14 @@ input {
     padding: 10px;
     background-color: #EDEFF2;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     box-sizing: border-box;
     outline: none;
     color: #CCD0D2;
+}
+
+::placeholder {
+    font-weight: 100;
 }
 
 .btn {
@@ -151,10 +158,10 @@ input {
 
 button {
     background-color: #038E7D;
-    border-radius: 5px;
+    border-radius: 3px;
     outline: none;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -197,17 +204,17 @@ button {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 30px;
 }
 
 .freelancer-heading h2 {
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
 }
 
 h5.money {
     color: #fff;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: normal;
     margin-top: 7px;
     position: relative;
@@ -225,7 +232,7 @@ h5.money {
 }
 
 .freelancer-heading p{
-    font-size: 14px;
+    font-size: 12px;
     font-style: italic;
     color: #fff;
     margin-top: 7px;
@@ -350,5 +357,14 @@ h5.money {
         display: flex;
         flex-direction: column;
         gap: 7px;
+    }
+
+    .card-container {
+        margin: 15px;
+    }
+
+    .freelancer {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
     }
 }
